@@ -28,14 +28,15 @@ when someone enters the room...
 0:00:44.680,0:00:46.680
 ...makes a sound.
 
-0:00:46.680,0:00:49.560
+0:00:46.680,0:00:49.860
 Now, to be totally transparent:
 
-0:00:49.560,0:00:51.900
+0:00:49.860,0:00:53.600
 ICStation gave me this.
 
-0:00:51.900,0:00:56.840
-Links in the description below, as usual.
+0:00:53.600,0:00:56.840
+Links in the description below,
+as usual.
 
 0:00:56.840,0:01:00.660
 So you can get it from them yourself.
@@ -76,7 +77,7 @@ But there's a diagram.
 (it's also on the website)
 
 0:01:29.240,0:01:33.080
-And a list of all the components
+And a list of the components
 on the back.
 
 0:01:33.080,0:01:36.380
@@ -147,15 +148,15 @@ Looks quite decently manufactured.
 No obvious faults to be seen,
 so that's ok.
 
-0:02:29.380,0:02:33.440
+0:02:29.380,0:02:33.800
 On the other side we've got
 component designators printed on.
 
-0:02:33.440,0:02:37.640
+0:02:33.800,0:02:38.060
 That's telling which part goes where,
 together with the values.
 
-0:02:37.640,0:02:40.340
+0:02:38.060,0:02:40.340
 So that should make things pretty easy.
 
 0:02:40.340,0:02:45.520
@@ -200,11 +201,11 @@ because it has a magnet.
 0:03:24.060,0:03:26.760
 We also need a sensor, of course.
 
-0:03:26.760,0:03:30.600
+0:03:26.760,0:03:30.280
 Here we've got something
 that looks quite it.
 
-0:03:30.600,0:03:32.540
+0:03:30.280,0:03:32.540
 It's a so-called LDR.
 
 0:03:32.540,0:03:35.700
@@ -214,10 +215,10 @@ or "light dependent resistor".
 As the name says,
 it's just a resistor.
 
-0:03:38.300,0:03:40.860
+0:03:38.300,0:03:40.660
 But it is dependent on light.
 
-0:03:40.860,0:03:43.840
+0:03:40.660,0:03:43.840
 So, contrary to the normal ones,
 like this one here...
 
@@ -238,6 +239,6 @@ Ie: the amount of light shining on it
 0:03:54.300,0:03:56.080
 We can test this, of course.
 
-0:03:56.080,0:03:59.020
+0:03:56.080,0:03:59.000
 Let's just grab the multimeter
 and have a look.
