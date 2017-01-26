@@ -477,19 +477,222 @@ a voltage divider.
 
 0:07:22.540,0:07:29.880
 So we've got two voltages top and bottom,
-and in the center there's another voltage in between.
+and another voltage at the center.
 
-0:07:29.880,0:07:32.840
+0:07:29.880,0:07:32.500
 Let's assume there's light on the LDR.
 
-0:07:32.840,0:07:35.100
+0:07:32.500,0:07:35.100
 That was about 12 kOhm.
+[No, it was 3 kOhm with light]
 
 0:07:35.100,0:07:37.500
 The lower one is 82 kOhm,
 
 0:07:37.500,0:07:41.020
 That gives about 4V between the two.
+[Actually: 4.4V with light on the LDR]
 
-0:07:41.020,0:07:44.140
-The only thing connected there is C3.
+0:07:41.020,0:07:46.880
+The only thing connected there is C3,
+which is a 1 micro Farad capacitor.
+
+0:07:46.880,0:07:49.180
+What does it do?
+
+0:07:49.180,0:07:52.100
+Well, it charges up
+- and that's it.
+
+0:07:52.100,0:07:55.160
+For now let's say
+it's a dead-end there.
+
+0:07:55.160,0:07:57.460
+Nothing else happening here.
+
+0:07:57.460,0:08:01.000
+We'll come back to that.
+But let's first look at the rest.
+
+0:08:01.000,0:08:04.940
+For understanding the rest,
+we've got to go kind of backwards.
+
+0:08:04.940,0:08:07.100
+Two transistors here.
+
+0:08:07.100,0:08:10.380
+The upper is a PNP,
+the lower an NPN.
+
+0:08:10.380,0:08:13.540
+So: the upper get's "plus" from here...
+
+0:08:13.540,0:08:16.680
+...and connects through
+if it gets "minus" at the base (middle pin).
+
+0:08:16.680,0:08:21.160
+While the lower connects through
+to minus is the base is positive.
+
+0:08:21.160,0:08:25.320
+Now, what if the upper one
+is currently conducting?
+
+0:08:25.320,0:08:28.680
+We would have a high potential
+connected to pin 2 of the IC.
+
+0:08:28.680,0:08:31.260
+Which can be viewed as a kind of signal.
+
+0:08:31.260,0:08:34.460
+As said: assuming "minus"
+at the base of Q1.
+
+0:08:34.460,0:08:37.300
+Let's check if there really is a "minus".
+
+0:08:37.300,0:08:40.140
+Well, there's 4.5V over R1.
+
+0:08:40.140,0:08:42.520
+So Q1 is switched off at first.
+
+0:08:42.520,0:08:46.860
+But Q1's base is also connected to C2.
+
+0:08:46.860,0:08:50.580
+C2 is a "103" capacitor,
+that means a 10 followed by 3 zeros.
+
+0:08:50.580,0:08:53.460
+10 followed by 3 zeros
+means 10 nF.
+
+0:08:53.460,0:08:56.620
+Let's put down 10 nF,
+so we can remember.
+
+0:08:56.620,0:09:00.700
+Well, actually what C2 does
+is only a bit of filtering.
+
+0:09:00.700,0:09:04.520
+That is, C2 is not really relevant
+(for now).
+
+0:09:04.520,0:09:06.880
+But: there's also Q2
+(connected to Q1's base).
+
+0:09:06.880,0:09:09.260
+Q2 gets "plus" fed in
+(to its collector).
+
+0:09:09.260,0:09:11.860
+But it CAN connect to "minus"...
+
+0:09:11.860,0:09:14.020
+...if it's got "plus" on its base.
+
+0:09:14.020,0:09:15.920
+Has it "plus" on the base?
+
+0:09:15.920,0:09:17.640
+Yes, it has.
+
+0:09:17.640,0:09:20.380
+Namely over R2,
+the "20 meg-Ohms"...
+
+0:09:20.380,0:09:22.440
+...there's "plus" at Q2's base...
+
+0:09:22.440,0:09:25.040
+...and the drawing is messed up!
+
+0:09:25.040,0:09:28.240
+Because: Q2 is now conducting.
+
+0:09:28.240,0:09:33.660
+That means everything below
+R1 is now at "minus", not "plus".
+
+0:09:33.660,0:09:37.420
+At "ground potential"
+(or something near 0V)
+
+0:09:37.420,0:09:42.000
+Which, on the other hand,
+means that Q1 is switched ON.
+
+0:09:42.000,0:09:44.800
+So Q1 let's current flow through.
+
+0:09:44.800,0:09:46.800
+Ok, good...
+
+0:09:46.800,0:09:48.300
+But...
+
+0:09:48.300,0:09:53.480
+Not only do we need current,
+we also need to react to RG, right?
+
+0:09:53.480,0:09:55.100
+Now comes into play...
+
+0:09:55.100,0:09:58.280
+...a characteristic of capacitors,
+namely of C3.
+
+0:09:58.280,0:10:04.860
+Usually, when put between "plus" and "minus",
+it stores some voltage [charge]. Like C1.
+
+0:10:04.860,0:10:07.700
+And that's correct for C1.
+But:
+
+0:10:07.700,0:10:09.920
+it's different for AC
+[alternating current]
+
+0:10:09.920,0:10:14.800
+Any CHANGE in voltage
+- is propagated through!
+
+0:10:14.800,0:10:17.940
+Voltage changes from where?
+From RG!
+
+0:10:17.940,0:10:21.480
+Our LDR, the light-dependent resistor.
+
+0:10:21.480,0:10:29.460
+Remember: its resistance VARIES
+from 3 kOhm to 12 kOhm.
+
+0:10:29.460,0:10:32.360
+So those 4V are not fixed.
+
+0:10:32.360,0:10:38.680
+Might be 4.4V as well
+(when LDR is @ 3 kOhm, not 12 kOhm)
+
+0:10:38.680,0:10:42.460
+That's a difference of 0.4V
+
+0:10:42.460,0:10:46.020
+And these 0.4V of difference
+do show up on the other side of C3.
+
+0:10:46.020,0:10:49.620
+On the other side, however,
+this difference appears inverted...
+
+0:10:49.620,0:10:50.700
+Errm...
