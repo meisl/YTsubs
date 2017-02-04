@@ -700,3 +700,25 @@ this difference appears inverted...
 
 0:10:49.620,0:10:50.700
 Errm...
+
+0:10:50.700,0:10:54.560
+So, since R2 is a very large resistor...
+
+0:10:54.560,0:10:57.860
+...only a small current is coming through,
+
+0:10:57.860,0:11:02.000
+which is "used up" for compensating
+for the voltage swing at C3.
+
+0:11:02.000,0:11:04.880
+So Q2 gets no current into
+its base and switches off.
+
+0:11:04.880,0:11:07.540
+Therefore there's plus on Q1's base,
+and IT switches off.
+
+0:11:07.540,0:11:09.980
+That in turn "disconnects"
+pin 2 of the IC.
